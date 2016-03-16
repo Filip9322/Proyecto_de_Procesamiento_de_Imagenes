@@ -2,8 +2,12 @@
 .db
 .DS_Store
 App.config
-Form1.Designer.cs
 IMG_IIC_2016.csproj
 Properties/
 bin/
 obj/
+*.bmp
+*.jpg
+*.png
+Thumbs.db
+Form1.resx
