@@ -1,0 +1,10 @@
+#Archivos comunes en dispositivos
+.db
+.DS_Store
+include/
+lib/
+glut32.dll
+Proj_Simulacion_2016.vcxproj
+Proj_Simulacion_2016.vcxproj.filters
+Ejercicio_con_estructuras.cpp
+Debug/
