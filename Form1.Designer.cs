@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(V_Principal));
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button_load_image = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,11 +53,21 @@
             this.button_load_image.UseVisualStyleBackColor = true;
             this.button_load_image.Click += new System.EventHandler(this.button_load_image_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(45, 162);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 100);
+            this.panel1.TabIndex = 3;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
             // V_Principal
             // 
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button_load_image);
             this.Controls.Add(this.pictureBox2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "V_Principal";
             this.Text = "ProcessMg";
             this.Load += new System.EventHandler(this.V_Principal_Load);
@@ -69,6 +81,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button_load_image;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
